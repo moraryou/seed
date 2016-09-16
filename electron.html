@@ -1,0 +1,329 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Electron support | seed 🌱</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.5.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./build-config.html" />
+    
+    
+    <link rel="prev" href="./env.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="6" data-chapter-title="Electron support" data-filepath="electron.md" data-basepath="." data-revision="Fri Sep 16 2016 19:32:08 GMT+0200 (CEST)">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="structure.html">
+            
+                
+                    <a href="./structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Project structure
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="commands.html">
+            
+                
+                    <a href="./commands.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Build commands
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="styles.html">
+            
+                
+                    <a href="./styles.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Styles
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="static.html">
+            
+                
+                    <a href="./static.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Handling static assets
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="env.html">
+            
+                
+                    <a href="./env.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Environment variables
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="6" data-path="electron.html">
+            
+                
+                    <a href="./electron.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Electron support
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="build-config.html">
+            
+                
+                    <a href="./build-config.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Configure your build
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="proxy.html">
+            
+                
+                    <a href="./proxy.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        API proxying during development
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="prerender.html">
+            
+                
+                    <a href="./prerender.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        Prerendering for SEO
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >seed 🌱</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="electron-support">Electron support</h1>
+<p>seed template allows you to generate a project with everything you need to develop and build an <a href="http://electron.atom.io/" target="_blank">Electron</a> app. If you whish to learn more about Electron, please check out their <a href="http://electron.atom.io/docs/" target="_blank">documentation</a>.</p>
+<p><em>
+<strong>Note</strong>: If you want to be able to use your app into a browser, please read about the <code>--target</code> flag in the <a href="commands.html">commands</a> section.</em></p>
+<h3 id="main-file">Main file</h3>
+<p>Electron needs an entry point to know how to run your app. This is the file stated in the <code>main</code> property of your <code>package.json</code>. By default, it will be <code>electron/main.js</code>.</p>
+<h3 id="development-and-debug">Development and debug</h3>
+<p>When using in development, you start Electron with:</p>
+<pre><code class="lang-bash">$ npm start
+</code></pre>
+<p>which internally runs:</p>
+<pre><code class="lang-bash">$ npm run electron
+</code></pre>
+<p>If you have checked the <code>package.json</code>, you&apos;ve seen that what it does is simply launch:</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">export</span> NODE_ENV=<span class="hljs-string">&quot;dev&quot;</span>; ./node_modules/.bin/electron .
+</code></pre>
+<p>The main process now has a <code>process.env[&apos;NODE_ENV&apos;]</code> property equals to <code>&apos;dev&apos;</code> that we can use to start Electron on your local dev server, open the devtools , load the dev bundle that uses source maps, hot reload, linting, etc...</p>
+<h3 id="using-the-file-protocol">Using the <code>file://</code> protocol</h3>
+<p>This is the main breaking point between electron and browser bundles (&#x201C;bundle&quot; as in &quot;webpack, the flexible module bundler&quot;). When you package and distribute your app, you create a package containing Electron binary and your bundled source code. It means that:</p>
+<ul>
+<li>you need to provide the renderer process a way to access your app files,</li>
+<li>you need to provide webpack a way to bundle you module and your assets, and make sure the path is still valid.</li>
+</ul>
+<p>With that in mind, you have two solutions: making your sources accessible through <code>http://</code> or <code>file://</code>. seed comes with the <strong><code>file://</code></strong> option for portability and simplicity. It simply takes some adjustements to the <code>webpack</code> config, by referencing the bundled files with their absolute path for example.</p>
+<p>Since seed comes with <a href="http://router.vuejs.org/en/index.html" target="_blank"><code>vue-router</code></a>, you also have to keep in mind that you <strong>cannot</strong> enable the <code>history</code> <a href="http://router.vuejs.org/en/options.html" target="_blank">option</a>. That is because your app URLs would look like <code>file:///path/to/your/app/index.html/my-route/</code>, which makes no sense in UNIX filesystem architecture.</p>
+<h3 id="building-and-packaging-your-app">Building and packaging your app</h3>
+<p><em>See <a href="commands.html"><code>commands</code></a>.</em></p>
+<p>seed provides you a way to quickly and easily package your app into a Windows, OS X or Linux portable binary with:</p>
+<pre><code class="lang-bash">$ npm run build
+</code></pre>
+<p>Running this command will build your app into the <code>dist/</code> folder and package it for you. Without any further parameter will package your app for your current platform. Nevertheless, you can package for any platform from any OS by adding <code>:darwin</code>, <code>:linux</code>, <code>:win32</code> or <code>:all</code> to this command (see the <a href="commands.html">commands</a> section).</p>
+<p>If you just want to build without packaging, simple type <code>npm run build:no-package</code>.</p>
+<p>If you only want to package with the current <code>dist/</code> folder, simple type <code>npm run package</code>.</p>
+<p>Architecture is <code>x64</code>, but if your project is targetted at <code>ia32</code> architecture, or even both, you can modify the <code>build/package-electron.js</code> file (see <a href="https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#arch" target="_blank">here</a> for API details).</p>
+<p>No <code>devDependencies</code> will be copied into the packaged binary, but all standard <code>dependencies</code> will, except <code>electron-prebuilt</code>, <code>electron-packager</code> and all <code>node_modules/.bin</code> executables. <code>releases</code> and <code>.git</code> folders will also be ignored, as well as development-only files and folders (<code>build/</code>, <code>src</code>, ...)</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./env.html" class="navigation navigation-prev " aria-label="Previous page: Environment variables"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./build-config.html" class="navigation navigation-next " aria-label="Next page: Configure your build"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

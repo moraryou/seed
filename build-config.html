@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Configure your build | seed 🌱</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.5.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./proxy.html" />
+    
+    
+    <link rel="prev" href="./electron.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="7" data-chapter-title="Configure your build" data-filepath="build-config.md" data-basepath="." data-revision="Fri Sep 16 2016 19:32:08 GMT+0200 (CEST)">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="structure.html">
+            
+                
+                    <a href="./structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Project structure
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="commands.html">
+            
+                
+                    <a href="./commands.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Build commands
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="styles.html">
+            
+                
+                    <a href="./styles.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Styles
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="static.html">
+            
+                
+                    <a href="./static.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Handling static assets
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="env.html">
+            
+                
+                    <a href="./env.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Environment variables
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="electron.html">
+            
+                
+                    <a href="./electron.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Electron support
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="7" data-path="build-config.html">
+            
+                
+                    <a href="./build-config.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Configure your build
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="proxy.html">
+            
+                
+                    <a href="./proxy.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        API proxying during development
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="prerender.html">
+            
+                
+                    <a href="./prerender.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        Prerendering for SEO
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >seed 🌱</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="configure-your-build">Configure your build</h1>
+<p><em><strong>Warning:</strong> As a general rule, you should not mess with the <code>build/</code> and <code>config/</code> files. They are already set up for either Electron or the browser and you will most likely just f**k things up.</em></p>
+<p>If you need to build your app into a place outside its current directory, you can edit <code>config/index.js</code>.</p>
+<p>Let&apos;s take a look at the default <code>config/index.js</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>)
+
+<span class="hljs-built_in">module</span>.exports = {
+  build: {
+    index: path.resolve(__dirname, <span class="hljs-string">&apos;dist/index.html&apos;</span>),
+    assetsRoot: path.resolve(__dirname, <span class="hljs-string">&apos;dist&apos;</span>),
+    assetsSubDirectory: <span class="hljs-string">&apos;static&apos;</span>,
+    assetsPublicPath: <span class="hljs-string">&apos;/&apos;</span>,
+    productionSourceMap: <span class="hljs-literal">true</span>
+  },
+  dev: {
+    port: <span class="hljs-number">8080</span>,
+    proxyTable: {}
+  }
+}
+</code></pre>
+<p>Inside the <code>build</code> section, we have the following options:</p>
+<h3 id="buildindex"><code>build.index</code></h3>
+<blockquote>
+<p>Must be an absolute path on your local file system.</p>
+</blockquote>
+<p>This is where the <code>index.html</code> (with injected asset URLs) will be generated.</p>
+<h3 id="buildassetsroot"><code>build.assetsRoot</code></h3>
+<blockquote>
+<p>Must be an absolute path on your local file system.</p>
+</blockquote>
+<p>This should point to the root directory that contains all the static assets for your app.</p>
+<h3 id="buildassetssubdirectory"><code>build.assetsSubDirectory</code></h3>
+<p>Nest webpack-generated assets under this directory in <code>build.assetsRoot</code>, so that they are not mixed with other files you may have in <code>build.assetsRoot</code>. For example, if <code>build.assetsRoot</code> is <code>/path/to/dist</code>, and <code>build.assetsSubDirectory</code> is <code>static</code>, then all Webpack assets will be generated in <code>path/to/dist/static</code>.</p>
+<p>This directory will be cleaned before each build, so it should only contain assets generated by the build.</p>
+<p>Files inside <code>static/</code> will be copied into this directory as-is during build. This means if you change this prefix, all your absolute URLs referencing files in <code>static/</code> will also need to be changed. See <a href="static.html">Handling Static Assets</a> for more details.</p>
+<h3 id="buildassetspublicpath"><code>build.assetsPublicPath</code></h3>
+<p>This should be the URL path where your <code>build.assetsRoot</code> will be served. If you are working on a browser targetted app, this will probably be <code>&apos;/&apos;</code> (you might need a prefix depending on your back-end),</p>
+<h3 id="buildproductionsourcemap"><code>build.productionSourceMap</code></h3>
+<p>Whether to generate source maps for production build.</p>
+<h3 id="devport"><code>dev.port</code></h3>
+<p>Specify the port for the dev server to listen to.</p>
+<h3 id="devproxytable"><code>dev.proxyTable</code></h3>
+<p>Define proxy rules for the dev server. See <a href="proxy.html">API Proxying During Development</a> for more details.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./electron.html" class="navigation navigation-prev " aria-label="Previous page: Electron support"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./proxy.html" class="navigation navigation-next " aria-label="Next page: API proxying during development"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
